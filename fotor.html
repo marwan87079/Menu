@@ -1,0 +1,186 @@
+<!DOCTYPE html>  
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفات الفطور</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            direction: rtl;
+            text-align: right;
+        }
+        header {
+            background-color: #ffeb3b;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:first-child {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:first-child:hover {
+            background-color: #e64a19;
+        }
+        nav a.previous, nav a[href="index.html"] {
+            background-color: red;
+            color: white;
+            font-weight: bold;
+        }
+        nav a.previous:hover, nav a[href="index.html"]:hover {
+            background-color: #e64a19;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .recipes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .recipe {
+            width: 40%;
+            margin: 20px 0;
+            padding: 20px;
+            background: #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .recipe h2 {
+            color: black;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>وصفات الفطور</h1>
+        <p>وصفات لذيذة لوجبات الفطور الخاصة بك!</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="fotor.html">وصفات الفطور</a>
+        <a href="lunch.html">وصفات الغداء</a>
+        <a href="dinner.html">وصفات العشاء</a>
+        <a href="dessert_drinks.html">الحلويات والمشروبات</a>
+        <a href="#foul">الفول المدمس</a>
+        <a href="#shakshuka">الشكشوكة</a>
+        <a href="#hummus">الحمص</a>
+        <a href="#labneh">اللبنة</a>
+        <a href="javascript:history.back()" class="previous">السابقة</a>
+    </nav>
+
+    <div class="recipes">
+        <div id="foul" class="recipe">
+            <h2>الفول المدمس</h2>
+            <img src="foul.jpg" alt="الفول المدمس">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>2 كوب فول</li>
+                <li>2 ملعقة كبيرة زيت زيتون</li>
+                <li>1/2 ليمونة معصورة</li>
+                <li>ملح وكمون حسب الذوق</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>سخن الفول في قدر صغير.</li>
+                <li>أضف زيت الزيتون والليمون والملح والكمون.</li>
+                <li>حرك جيدًا وقدمه مع الخبز.</li>
+            </ol>
+        </div>
+
+        <div id="shakshuka" class="recipe">
+            <h2>الشكشوكة</h2>
+            <img src="shakshuka.jpg" alt="الشكشوكة">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>3 بيضات</li>
+                <li>2 طماطم مفرومة</li>
+                <li>1 بصلة صغيرة مفرومة</li>
+                <li>1 فص ثوم مفروم</li>
+                <li>ملح وفلفل حسب الذوق</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>في مقلاة، سخن القليل من الزيت وقلب البصل والثوم حتى يذبلا.</li>
+                <li>أضف الطماطم واتركها تطبخ حتى تتكثف.</li>
+                <li>اكسر البيض فوق الخليط واتركه يطهى على نار هادئة.</li>
+                <li>قدم الشكشوكة ساخنة مع الخبز.</li>
+            </ol>
+        </div>
+
+        <div id="hummus" class="recipe">
+            <h2>الحمص</h2>
+            <img src="hummus.jpg" alt="الحمص">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>1 كوب حمص مسلوق</li>
+                <li>2 ملعقة كبيرة طحينة</li>
+                <li>1/2 ليمونة معصورة</li>
+                <li>1 فص ثوم</li>
+                <li>ملح حسب الذوق</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>اخلط جميع المكونات في الخلاط حتى تحصل على قوام ناعم.</li>
+                <li>قدم الحمص مع زيت الزيتون وزينه بالبابريكا.</li>
+            </ol>
+        </div>
+
+        <div id="labneh" class="recipe">
+            <h2>اللبنة</h2>
+            <img src="labneh.jpg" alt="اللبنة">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>1 كوب لبن زبادي مصفى</li>
+                <li>2 ملعقة كبيرة زيت زيتون</li>
+                <li>زعتر للتزيين</li>
+                <li>ملح حسب الذوق</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>ضع اللبن المصفى في طبق.</li>
+                <li>رش الملح وزيت الزيتون على الوجه.</li>
+                <li>زين بالزعتر وقدمه مع الخبز.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 وصفات الفطور</p>
+    </footer>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وصفات العشاء</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            direction: rtl;
+            text-align: right;
+        }
+        header {
+            background-color: #ffeb3b;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+            /* إزالة الانحناء */
+            border-radius: 0;
+        }
+        nav a:first-child {
+            background-color: #ff5722;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:first-child:hover {
+            background-color: #e64a19;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        nav a.back-button {
+            background-color: red;
+            font-weight: bold;
+        }
+        nav a.back-button:hover {
+            background-color: darkred;
+        }
+        .recipes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .recipe {
+            width: 40%;
+            margin: 20px 0;
+            padding: 20px;
+            background: #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .recipe img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .recipe h2 {
+            color: black;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>وصفات العشاء</h1>
+        <p>وجبات عشاء خفيفة ولذيذة في نهاية يومك!</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="fotor.html">وصفات الفطور</a>
+        <a href="lunch.html">وصفات الغداء</a>
+        <a href="dinner.html">وصفات العشاء</a>
+        <a href="dessert_drinks.html">الحلويات والمشروبات</a>
+        <a href="#sandwich">ساندويشات</a>
+        <a href="#mutabbal">متبل الباذنجان</a>
+        <a href="#tabbouleh">تبولة</a>
+        <a href="#mini-pizza">ميني بيتزا</a>
+        <a href="javascript:history.back()" class="back-button">السابقة</a>
+    </nav>
+
+    <div class="recipes">
+        <div id="sandwich" class="recipe">
+            <h2>ساندويشات</h2>
+            <img src="sandwich.jpg" alt="ساندويشات">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>خبز تورتيلا</li>
+                <li>دجاج مشوي أو شرائح لحم</li>
+                <li>خس، طماطم، خيار</li>
+                <li>مايونيز أو صوص خردل</li>
+                <li>جبن موتزاريلا</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>ضع شرائح الدجاج أو اللحم في خبز التورتيلا.</li>
+                <li>أضف الخضار والصوص.</li>
+                <li>لف الساندويش وقدمه مع مشروب بارد.</li>
+            </ol>
+        </div>
+
+        <div id="mutabbal" class="recipe">
+            <h2>متبل الباذنجان</h2>
+            <img src="mutabbal.jpg" alt="متبل الباذنجان">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>1 باذنجانة كبيرة</li>
+                <li>2 ملعقة كبيرة طحينة</li>
+                <li>1 فص ثوم مفروم</li>
+                <li>عصير ليمونة</li>
+                <li>ملح وفلفل أسود حسب الذوق</li>
+                <li>زيت زيتون للتقديم</li>
+                <li>رشة من البابريكا</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>شوي الباذنجانة على النار أو في الفرن حتى تصبح ناعمة وقابلة للتقشير.</li>
+                <li>قشر الباذنجانة واهرسها جيدًا باستخدام شوكة أو محضر الطعام.</li>
+                <li>أضف الطحينة، الثوم، عصير الليمون، الملح والفلفل وامزج جيدًا.</li>
+                <li>قدمه في طبق تقديم مع زيت الزيتون ورشة من البابريكا.</li>
+            </ol>
+        </div>
+
+        <div id="tabbouleh" class="recipe">
+            <h2>تبولة</h2>
+            <img src="tabbouleh.jpg" alt="تبولة">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>1 كوب برغل ناعم</li>
+                <li>2 حبة طماطم مفرومة</li>
+                <li>نصف كوب بقدونس مفروم</li>
+                <li>1 بصلة صغيرة مفرومة</li>
+                <li>عصير ليمونة</li>
+                <li>زيت زيتون وملح حسب الذوق</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>نقع البرغل في الماء الساخن لمدة 10 دقائق ثم تصفيته.</li>
+                <li>اخلط البرغل مع الخضار والبقدونس في وعاء كبير.</li>
+                <li>أضف زيت الزيتون والليمون والملح ثم قلب جيداً.</li>
+            </ol>
+        </div>
+
+        <div id="mini-pizza" class="recipe">
+            <h2>ميني بيتزا</h2>
+            <img src="mini-pizza.jpg" alt="ميني بيتزا">
+            <h3>المكونات:</h3>
+            <ul>
+                <li>عجينة بيتزا جاهزة أو محضرة في المنزل</li>
+                <li>صلصة طماطم</li>
+                <li>جبن موزاريلا</li>
+                <li>زيتون أسود مقطع</li>
+                <li>شرائح فلفل رومي</li>
+            </ul>
+            <h3>الخطوات:</h3>
+            <ol>
+                <li>افرد العجينة على صينية الخبز.</li>
+                <li>ضع طبقة من صلصة الطماطم ثم الجبن والزيتون والفلفل.</li>
+                <li>اخبز في الفرن على حرارة 200 درجة مئوية لمدة 10-15 دقيقة.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 وصفات العشاء</p>
+    </footer>
+</body>
+</html>
+
+
+
